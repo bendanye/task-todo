@@ -13,3 +13,5 @@ with open("not_done_tasks.txt", "a") as file:
     file.write(f"{item}\n")
 
     fcntl.flock(file.fileno(), fcntl.LOCK_UN)
+
+    print(f"Added new task: {item}")
