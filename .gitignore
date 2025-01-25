@@ -1,5 +1,7 @@
 .idea/
 .DS_Store
+not_done_tasks.txt
+done_tasks.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
