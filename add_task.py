@@ -1,5 +1,8 @@
 import fcntl
 import sys
+import os
+
+SCRIPT_DIR = os.path.abspath(os.path.dirname(__file__))
 
 if len(sys.argv) <= 1:
     print("Specify item to add")
@@ -7,7 +10,7 @@ if len(sys.argv) <= 1:
 
 item = sys.argv[1]
 
-with open("not_done_tasks.txt", "a") as file:
+with open(f"{SCRIPT_DIR}/not_done_tasks.txt", "a") as file:
     fcntl.flock(file.fileno(), fcntl.LOCK_EX)
 
     file.write(f"{item}\n")
