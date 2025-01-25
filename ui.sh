@@ -2,4 +2,4 @@ SCRIPT_DIR=$( dirname -- "$0"; )
 
 cd $SCRIPT_DIR
 
-python3 tasks_ui.py
+python3 ui.py
