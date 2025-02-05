@@ -70,8 +70,8 @@ def _mark_as_done(task) -> None:
     tasks.remove(task)
     with open(f"{SCRIPT_DIR}/not_done_tasks.txt", "w") as file:
         fcntl.flock(file.fileno(), fcntl.LOCK_EX)
-        for task in tasks:
-            file.write(f"{task}\n")
+        for t in tasks:
+            file.write(f"{t}\n")
         fcntl.flock(file.fileno(), fcntl.LOCK_UN)
 
     with open(f"{SCRIPT_DIR}/done_tasks.txt", "a") as file:
