@@ -4,7 +4,7 @@ A simple UI to manage tasks
 
 ## Prerequisites
 
-At least Python 3.7
+Python 3.7 to 3.9
 
 ## Project Setup & Commands
 
@@ -22,7 +22,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 # For newer Mac
-brew install python-tk
+brew install python-tk@3.9
 ```
 
 ### Setup required files
