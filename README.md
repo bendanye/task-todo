@@ -34,7 +34,7 @@ sh ./setup.sh
 ### Run the program
 
 ```shell
-python3 ui.py
+sh ui.sh
 ```
 
 ### Add new task
